@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home :: 801 Labs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar is-fixed-top labs-navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item labs-nav-logo" href="index.html">
+      <img src="https://raw.githubusercontent.com/801labs/media/master/Logos/801Labs_black.png">
+    </a>
+
+    <a role="button" class="navbar-burger burger labs-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+
+      <!-- HOME -->
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a href="index.html" class="navbar-item is-active">Home</a>
+        <div class="navbar-dropdown">
+          <a href="index.html#what" class="navbar-item">What is 801 Labs?</a>
+          <a href="index.html#learn" class="navbar-item">What will I learn at 801 Labs?</a>
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a href="about.html" class="navbar-item">About</a>
+        <div class="navbar-dropdown">
+          <a href="about.html#mission" class="navbar-item">Mission</a>
+          <a href="about.html#organization" class="navbar-item">Organization</a>
+          <a href="about.html#people" class="navbar-item">People</a>
+          <a href="about.html#faq" class="navbar-item">FAQ</a>
+          <hr class="navbar-divider">
+        </div>
+      </div>
+
+      <a href="events.html" class="navbar-item">Events</a>
+
+      <!-- Location and Hours -->
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a href="location-and-hours.html" class="navbar-item">Location and Hours</a>
+        <div class="navbar-dropdown">
+          <a href="location-and-hours.html" class="navbar-item">Enterance and Parking</a>
+          <a href="location-and-hours.html" class="navbar-item">Virtual Tour</a>
+        </div>
+      </div>
+
+      <!-- Resources -->
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a href="resources.html" class="navbar-item">Resources</a>
+        <div class="navbar-dropdown">
+          <a href="resources.html" class="navbar-item">Equipment and Tools</a>
+          <hr class="navbar-divider">
+          <a href="resources.html" class="navbar-item">BLOG</a>
+          <a href="resources.html" class="navbar-item">RESEARCH</a>
+        </div>
+      </div>
+
+      <!-- Get Involved -->
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a href="get-involved.html" class="navbar-item">Get Involved</a>
+        <div class="navbar-dropdown">
+          <a href="get-involved.html" class="navbar-item">Quick Start</a>
+          <a href="get-involved.html" class="navbar-item">Donate</a>
+          <a href="get-involved.html" class="navbar-item">Volunteer</a>
+        </div>
+      </div>
+
+      <a href="contact.html" class="navbar-item">Contact</a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-dark">
+            <span class="icon">
+              <i class="fab fa-paypal"></i>
+            </span>
+            <span>Donate</span>
+          </a>
+          <a class="button is-black is-outlined">
+            <span class="icon">
+              <i class="fab fa-slack"></i>
+            </span>
+            <span>Join Slack</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Be Social -->
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a href="contact.html" class="navbar-item">Be Social</a>
+        <div class="navbar-dropdown is-right labs-mobile-dropdown">
+          <a href="https://g.page/801labs?share" class="navbar-item">
+            <span class="icon is-medium">
+              <i class="fa fa-location-arrow"></i>
+            </span>
+            Go there
+          </a>
+          <a href="mailto:board@801labs.org" class="navbar-item">
+            <span class="icon is-medium">
+              <i class="fas fa-envelope"></i>
+            </span>
+            Email us
+          </a>
+          <a href="https://research.801labs.org/" class="navbar-item has-background-grey-lighter">
+            <span class="icon is-medium">
+              <i class="fas fa-flask"></i>
+            </span>
+            Read our research
+          </a>
+          <a href="https://www.meetup.com/801labs/" class="navbar-item">
+            <span class="icon is-medium">
+              <i class="fab fa-meetup"></i>
+            </span>
+            Meet up
+          </a>
+          <a href="https://slack.801labs.org" class="navbar-item">
+            <span class="icon is-medium">
+              <i class="fab fa-slack"></i>
+            </span>
+            Slack chat
+          </a>
+          <a href="https://freenode.net/kb/answer/registration" class="navbar-item">
+            <span class="icon is-medium">
+              <i class="fa fa-hashtag"></i>
+            </span>
+            IRC chat
+          </a>
+          <a href="https://github.com/801labs/" class="navbar-item">
+            <span class="icon is-medium">
+              <i class="fab fa-github"></i>
+            </span>
+            Commit
+            </a>
+          <a href="http://www.youtube.com/c/801LabsSaltLakeCity" class="navbar-item">
+            <span class="icon is-medium">
+              <i class="fab fa-youtube"></i>
+            </span>
+            Watch classes
+          </a>
+          <a href="#" class="navbar-item">
+            <span class="icon is-medium">
+              <i class="fab fa-facebook"></i>
+            </span>
+            FaceBook
+          </a>
+          <a href="#" class="navbar-item">
+            <span class="icon is-medium">
+              <i class="fab fa-instagram"></i>
+            </span>
+            Look at us
+          </a>
+          <a href="https://twitter.com/801labs" class="navbar-item">
+            <span class="icon is-medium">
+              <i class="fab fa-twitter"></i>
+            </span>
+            Tweet at us
+          </a>
+          <a href="#blog" class="navbar-item">
+            <span class="icon is-medium">
+              <i class="fas fa-book"></i>
+            </span>
+            Read our posts
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+<section class="is-hidden-tablet">
+          <div class="content has-text-centered">
+            <!-- animate white svg <object class="labslogo" data="801Labs_black.svg" type="image/svg+xml"></object> -->
+            <img class="labslogo" src="https://raw.githubusercontent.com/801labs/media/master/Logos/801Labs_black.png">
+            <h2 class="subtitle">
+              A Community Hackerspace for Information Technology, Electronics, and Information Security Enthusiasts
+            </h2>
+            <div class="buttons is-centered">
+              <button class="button is-black is-outlined">Donate</button>
+              <a href="get-involved.html" class="button is-black is-outlined"><span>Volunteer</span></a>
+              <a href="https://slack.801labs.org" class="button is-black is-outlined"><span>Join Slack</span></a>
+            </div>
+          </div>
+</section>
+
+<section class="labs-hero-photo-background is-hidden-mobile">
+    <div class="labs-overlay has-text-white labs-has-text-white">
+<div class="columns is-vcentered">
+  <div class="column has-text-right">
+    <!-- animate white svg <object class="labslogo" data="801Labs_black.svg" type="image/svg+xml"></object> -->
+    <img class="labslogo" src="https://raw.githubusercontent.com/801labs/media/master/Logos/801Labs_white.png">
+  </div>
+  <div class="column has-text-left">
+    <h2 class="subtitle">
+      A Community Hackerspace for Information Technology, Electronics, and Information Security Enthusiasts
+    </h2>
+    <div class="buttons">
+      <div class="buttons is-centered">
+        <button class="button is-white is-outlined">Donate</button>
+        <a href="get-involved.html" class="button is-white is-outlined"><span>Volunteer</span></a>
+        <a href="https://slack.801labs.org" class="button is-white is-outlined"><span>Join Slack</span></a>
+      </div>
+    </div>
+    <div class="labs-scroll">
+      <span class="labs-arrow">&darr;</span>
+      scroll down a little more
+      <span class="labs-arrow">&darr;</span>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<section id="answers" class="section">
+  <div class="columns">
+    <div class="column">
+      <div class="content">
+        <h1 class="title">What is 801 Labs?</h1>
+        <p>801 Labs is a Salt Lake City based hackerspace created by local information technology, electronics, and information security enthusiasts. 801 Labs is a physical space designed to be a center for peer learning and knowledge sharing in the form of workshops, presentations, and lectures. We also offer regular social activities to the community, where people can gather to work on their own projects, exchange ideas, and learn from each other. Since 801 Labs is intended to be a shared community resource, almost all of our events are free and open to the public.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <h1 class="title">What will I learn at 801 Labs?</h1>
+        <p>801 Labs runs a wide variety of classes that cover topics ranging from designing and building electronics, to information security, to programming, to 3D printing and 3D modeling, and more. Since we are a community run organization, our class offerings are based on what members of the local community are proficient in and willing to teach. The best way to find out exactly what you can learn is to check out our upcoming events. If you’ve got something you want to teach or would like to learn about, you can check out the get involved section and let us know you’d like to teach a class, or to let us know there is interest in a topic so that we can try to organize a class to cover that topic.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">Location and Hours</h1>
+      <div class="columns">
+        <div class="column">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.848712761411!2d-111.88284848477637!3d40.76535207932606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f572ad542573%3A0xdd96640329b3d2cb!2s353%20E%20200%20S%20Suite%20%23B%2C%20Salt%20Lake%20City%2C%20UT%2084111!5e0!3m2!1sen!2sus!4v1575941669213!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="column">
+          <div class="content">
+            <h4 class="title is-4">Regular Hours</h4>
+            <p>Tuesday and Thursdays from 5:00 PM to 10:00 PM</p>
+            <h4 class="title is-4">Holiday Hours</h4>
+            <p>Ask on our Slack Channel or check our social media for changes</p>
+            <b>Other</b>
+            <p>We are open to the public whenever our key list volunteers are available to run the space. Again, ask on our Slack Channel.</p>
+          </div>
+          <a href="location-and-hours.html" class="button is-black is-outlined">
+            <span>Visit us!</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="content has-text-centered">
+      <h1 class="title">Get Involved By Volunteering Or Donating</h1>
+
+<p><a href="#">
+  <span class="icon is-medium">
+    <i class="fab fa-paypal"></i>
+  </span>
+  One Time Through PayPal
+</a> | Subscribe | Stuff | Classes | Marketing | More</p>
+
+<a href="get-involved.html" class="button is-dark">
+  <span>Learn how to contribute :)</span>
+</a>
+
+</div>
+
+  </section>
+
+  <section class="hero is-dark is-fullheight">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1">Instagram Photos of volunteers doing things</h1>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <a href="code-of-conduct.html">
+        <span>Code Of Conduct</span>
+      </a>
+      |
+      <a href="terms.html">
+        <span>Terms</span>
+      </a>
+    </div>
+  </footer>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
