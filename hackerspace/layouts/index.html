@@ -3,6 +3,15 @@
       <div class="homepage-content">
         <!-- content/_index.html -->
         {{.Content}}
+<div class="navbar-menu">
+  <div class="navbar-start">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main.ByWeight }}
+    <a href="{{ .URL }}" class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">{{ .Name }}</a>
+    {{ end }}
+  </div>
+</div>
+
       </div>
     </main>
 {{ end }}

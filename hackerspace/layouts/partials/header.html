@@ -14,61 +14,7 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-
-      <!-- HOME -->
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a href="./index.html" class="navbar-item is-active">Home</a>
-        <div class="navbar-dropdown">
-          <a href="./index#what" class="navbar-item">What is 801 Labs?</a>
-          <a href="./index#learn" class="navbar-item">What will I learn at 801 Labs?</a>
-        </div>
-      </div>
-
-      <!-- ABOUT -->
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a href="./about" class="navbar-item">About</a>
-        <div class="navbar-dropdown">
-          <a href="./about#mission" class="navbar-item">Mission</a>
-          <a href="./about#organization" class="navbar-item">Organization</a>
-          <a href="./about#people" class="navbar-item">People</a>
-          <a href="./about#faq" class="navbar-item">FAQ</a>
-          <hr class="navbar-divider">
-        </div>
-      </div>
-
-      <a href="./events" class="navbar-item">Events</a>
-
-      <!-- Location and Hours -->
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a href="./location-and-hours" class="navbar-item">Location and Hours</a>
-        <div class="navbar-dropdown">
-          <a href="./location-and-hours" class="navbar-item">Enterance and Parking</a>
-          <a href="./location-and-hours" class="navbar-item">Virtual Tour</a>
-        </div>
-      </div>
-
-      <!-- Resources -->
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a href="./resources" class="navbar-item">Resources</a>
-        <div class="navbar-dropdown">
-          <a href="./resources" class="navbar-item">Equipment and Tools</a>
-          <hr class="navbar-divider">
-          <a href="./resources" class="navbar-item">BLOG</a>
-          <a href="./resources" class="navbar-item">RESEARCH</a>
-        </div>
-      </div>
-
-      <!-- Get Involved -->
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a href="./get-involved" class="navbar-item">Get Involved</a>
-        <div class="navbar-dropdown">
-          <a href="./get-involved" class="navbar-item">Quick Start</a>
-          <a href="./get-involved" class="navbar-item">Donate</a>
-          <a href="./get-involved" class="navbar-item">Volunteer</a>
-        </div>
-      </div>
-
-      <a href="./contact" class="navbar-item">Contact</a>
+      {{- partial "menu.html" . -}}
     </div>
 
     <div class="navbar-end">
@@ -93,78 +39,7 @@
       <div class="navbar-item has-dropdown is-hoverable">
         <a href="./contact" class="navbar-item">Be Social</a>
         <div class="navbar-dropdown is-right labs-mobile-dropdown">
-          <a href="https://g.page/801labs?share" class="navbar-item">
-            <span class="icon is-medium">
-              <i class="fa fa-location-arrow"></i>
-            </span>
-            Go there
-          </a>
-          <a href="mailto:board@801labs.org" class="navbar-item">
-            <span class="icon is-medium">
-              <i class="fas fa-envelope"></i>
-            </span>
-            Email us
-          </a>
-          <a href="https://research.801labs.org/" class="navbar-item has-background-grey-lighter">
-            <span class="icon is-medium">
-              <i class="fas fa-flask"></i>
-            </span>
-            Read our research
-          </a>
-          <a href="https://www.meetup.com/801labs/" class="navbar-item">
-            <span class="icon is-medium">
-              <i class="fab fa-meetup"></i>
-            </span>
-            Meet up
-          </a>
-          <a href="https://slack.801labs.org" class="navbar-item">
-            <span class="icon is-medium">
-              <i class="fab fa-slack"></i>
-            </span>
-            Slack chat
-          </a>
-          <a href="https://freenode.net/kb/answer/registration" class="navbar-item">
-            <span class="icon is-medium">
-              <i class="fa fa-hashtag"></i>
-            </span>
-            IRC chat
-          </a>
-          <a href="https://github.com/801labs/" class="navbar-item">
-            <span class="icon is-medium">
-              <i class="fab fa-github"></i>
-            </span>
-            Commit
-            </a>
-          <a href="http://www.youtube.com/c/801LabsSaltLakeCity" class="navbar-item">
-            <span class="icon is-medium">
-              <i class="fab fa-youtube"></i>
-            </span>
-            Watch classes
-          </a>
-          <a href="#" class="navbar-item">
-            <span class="icon is-medium">
-              <i class="fab fa-facebook"></i>
-            </span>
-            FaceBook
-          </a>
-          <a href="#" class="navbar-item">
-            <span class="icon is-medium">
-              <i class="fab fa-instagram"></i>
-            </span>
-            Look at us
-          </a>
-          <a href="https://twitter.com/801labs" class="navbar-item">
-            <span class="icon is-medium">
-              <i class="fab fa-twitter"></i>
-            </span>
-            Tweet at us
-          </a>
-          <a href="./#blog" class="navbar-item">
-            <span class="icon is-medium">
-              <i class="fas fa-book"></i>
-            </span>
-            Read our posts
-          </a>
+          {{- partial "socials.html" . -}}
         </div>
       </div>
     </div>
