@@ -37,6 +37,11 @@ body{
   border: 5px dotted #222;
   border-radius: 25px;
 }
+
+.footer a + a:before {
+    content: " | ";
+}
+
 @media only screen and (max-width: 1024px){
   .labs-mobile-dropdown .navbar-item{
     display: inline-block;

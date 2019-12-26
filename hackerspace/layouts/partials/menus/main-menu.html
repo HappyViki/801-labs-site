@@ -1,0 +1,3 @@
+{{ range .Site.Menus.main.ByWeight }}
+  <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
+{{ end }}
